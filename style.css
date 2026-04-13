@@ -1,0 +1,304 @@
+/* Tetapan Asas */
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #f8fafc;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Kad Log Masuk & Pendaftaran */
+.login-card, .reg-card {
+    background: white;
+    padding: 40px;
+    border-radius: 16px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+}
+
+h2 {
+    color: #1e293b;
+    margin-bottom: 8px;
+    font-size: 24px;
+}
+
+p {
+    color: #64748b;
+    font-size: 14px;
+    margin-bottom: 24px;
+}
+
+/* Gaya Input */
+input[type="text"], 
+input[type="password"], 
+input[type="email"],
+select {
+    width: 100%;
+    padding: 12px 16px;
+    margin-bottom: 16px;
+    border: 1px solid #e2e8f0;
+    border-radius: 8px;
+    font-size: 14px;
+    transition: border-color 0.2s;
+    box-sizing: border-box; /* Pastikan padding tidak merosakkan saiz */
+}
+
+input:focus {
+    outline: none;
+    border-color: #2563eb;
+    box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.1);
+}
+
+/* Gaya Butang */
+button {
+    width: 100%;
+    padding: 12px;
+    background-color: #2563eb;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+button:hover {
+    background-color: #1d4ed8;
+}
+
+/* Mesej Ralat */
+.error {
+    background-color: #fef2f2;
+    color: #ef4444;
+    padding: 10px;
+    border-radius: 6px;
+    font-size: 13px;
+    margin-bottom: 16px;
+    border: 1px solid #fee2e2;
+}
+
+/* Pautan Tambahan */
+.footer-link {
+    margin-top: 20px;
+    font-size: 14px;
+    color: #64748b;
+}
+
+.footer-link a {
+    color: #2563eb;
+    text-decoration: none;
+    font-weight: 500;
+}
+/* --- Tambahan Gaya Khusus Untuk Portal --- */
+
+.portal-container {
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 0 20px;
+    text-align: center;
+}
+
+.voter-info {
+    background: #e0e7ff;
+    color: #3730a3;
+    padding: 10px 20px;
+    border-radius: 30px;
+    display: inline-block;
+    font-weight: 600;
+    margin-bottom: 30px;
+}
+
+/* Grid Susunan Calon */
+.candidate-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 25px;
+    margin-top: 20px;
+}
+
+/* Kad Calon */
+.candidate-card {
+    background: white;
+    padding: 30px;
+    border-radius: 16px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: 1px solid #f1f5f9;
+}
+
+.candidate-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+.candidate-img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 15px;
+    border: 4px solid #2563eb;
+    background: #f8fafc;
+}
+
+.candidate-card h3 {
+    margin: 10px 0 5px 0;
+    color: #1e293b;
+}
+
+.candidate-faculty {
+    color: #2563eb;
+    font-weight: 600;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+.candidate-manifesto {
+    font-style: italic;
+    color: #64748b;
+    font-size: 13px;
+    line-height: 1.5;
+    min-height: 40px;
+}
+
+/* Butang Undi (Hijau) */
+.btn-vote {
+    background-color: #10b981;
+    margin-top: 20px;
+}
+
+.btn-vote:hover {
+    background-color: #059669;
+}
+
+/* Butang Keluar (Merah) */
+.logout-link {
+    display: inline-block;
+    margin-top: 40px;
+    color: #ef4444;
+    text-decoration: none;
+    font-weight: 600;
+    padding: 10px 20px;
+    border: 1px solid #fee2e2;
+    border-radius: 8px;
+    transition: 0.3s;
+}
+
+.logout-link:hover {
+    background: #fef2f2;
+}
+
+/* --- Gaya Khusus Untuk Portal Calon --- */
+
+.portal-container {
+    max-width: 1100px;
+    margin: 50px auto;
+    padding: 0 20px;
+    text-align: center;
+}
+
+.portal-container h2 {
+    font-size: 28px;
+    color: #1e293b;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* Grid Layout */
+.candidate-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    margin-top: 40px;
+}
+
+/* Kad Calon */
+.candidate-card {
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 20px;
+    border: 1px solid #e2e8f0;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05);
+    transition: all 0.3s ease;
+}
+
+.candidate-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+}
+
+/* Gaya Gambar (Penting bagi mengatasi masalah gambar tak keluar) */
+.candidate-img {
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    object-fit: cover; /* Memastikan gambar tidak penyek */
+    border: 6px solid #2563eb;
+    margin-bottom: 20px;
+    background-color: #f1f5f9; /* Warna simpanan jika gambar gagal dimuat */
+}
+
+.candidate-card h3 {
+    font-size: 20px;
+    color: #1e293b;
+    margin: 10px 0;
+}
+
+.candidate-faculty {
+    color: #2563eb;
+    font-weight: 700;
+    font-size: 14px;
+    margin-bottom: 15px;
+}
+
+.candidate-manifesto {
+    font-style: italic;
+    color: #64748b;
+    font-size: 14px;
+    line-height: 1.6;
+    margin: 15px 0;
+}
+
+/* Statistik Undi */
+.vote-count {
+    background: #f0fdf4;
+    color: #166534;
+    padding: 8px 15px;
+    border-radius: 10px;
+    display: inline-block;
+    font-weight: 700;
+    font-size: 15px;
+    border: 1px solid #bbf7d0;
+}
+
+/* Link Log Keluar */
+.logout-link {
+    display: inline-block;
+    margin-top: 40px;
+    color: #ef4444;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 15px;
+    border-bottom: 2px solid transparent;
+    transition: 0.3s;
+}
+
+.logout-link:hover {
+    border-bottom: 2px solid #ef4444;
+}
+
+.candidate-img {
+    width: 150px;       /* Tetapkan lebar */
+    height: 150px;      /* Tetapkan tinggi */
+    border-radius: 50%; /* Jadikan bentuk bulat */
+    object-fit: cover;  /* Elakkan gambar jadi penyek */
+    display: block;
+    margin: 0 auto;
+    border: 3px solid #2563eb;
+}
+
